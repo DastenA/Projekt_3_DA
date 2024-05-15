@@ -173,12 +173,20 @@ void updategame() {
       delay(3000);
       digitalWrite(RED_PIN, LOW);
     } else {
-      // If the player's input is correct, flash the green LED three times
-      for (int l = 0; l < 3; l++) {
-        digitalWrite(GREEN_PIN, HIGH);
-        delay(200);
-        digitalWrite(GREEN_PIN, LOW);
-        delay(200);
+             {
+      // If the player's input is correct, flash the green LED multiple times
+      digitalWrite(GREEN_PIN, HIGH);
+      delay(200);
+      digitalWrite(GREEN_PIN, LOW);
+      delay(200);
+      digitalWrite(GREEN_PIN, HIGH);
+      delay(200);
+      digitalWrite(GREEN_PIN, LOW);
+      delay(200);
+      digitalWrite(GREEN_PIN, HIGH);
+      delay(200);
+      digitalWrite(GREEN_PIN, LOW);
+      delay(200);
       }
     }
   }
