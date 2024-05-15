@@ -65,7 +65,7 @@ void updatecolor() {
   if (millis() - startTime < duration) {
     int color;
     do {
-      color = random(3);  // Generate a random number (0-3) to represent the color
+      color = random(4);  // Generate a random number (0-3) to represent the color
     } while (color == previousColor);  // Ensure the new color is different from the previous one
 
     // Set RGB values based on the selected color
